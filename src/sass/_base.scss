@@ -1,0 +1,24 @@
+.container{
+    width:100vw;
+    margin:0 auto;
+    padding-left:16px;
+    padding-right:16px;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+ 
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  background-color: #ffffff;
+}
+
+.list{
+  list-style: none;
+}
+
