@@ -1,0 +1,2 @@
+("undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:"undefined"!=typeof window?window:"undefined"!=typeof global?global:{}).parcelRequired7c6.register("iYX9v",(function(e,t){var n,i;n=document.querySelector("[data-menu-button]"),i=document.querySelector("[data-menu]"),n.addEventListener("click",(function(){var e="true"===n.getAttribute("aria-expanded")||!1;n.classList.toggle("is-open"),n.setAttribute("aria-expanded",!e),i.classList.toggle("is-open")}))}));
+//# sourceMappingURL=mobile-menu.be6c758d.js.map
