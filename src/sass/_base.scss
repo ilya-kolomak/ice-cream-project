@@ -3,11 +3,24 @@
     margin:0 auto;
     padding-left:16px;
     padding-right:16px;
-}
+    @include tablet{
+      width: 768px;
+    }
+
+    @include desktop{
+      width: 1200px;
+    }
+
+    }
+    .section{
+      padding-top: 60px;
+      padding-bottom: 60px;}
+
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
 
 body{
  
@@ -15,10 +28,18 @@ body{
   font-style: normal;
   font-size: 14px;
   letter-spacing: 0.04em;
-  background-color: #ffffff;
+  background-color: $text-white-color;
 }
 
 .list{
   list-style: none;
 }
 
+a{
+  text-decoration:none;
+}
+
+a:hover, 
+a:focus{
+  color: $accent-color;
+}
