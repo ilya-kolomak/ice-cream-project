@@ -22,9 +22,7 @@
     }
 
     @media screen and (min-width: 768px) {
-      width: 254px;
-      // height: 1020px;
-
+      width: 250px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -58,15 +56,10 @@
     &:last-child {
       border-bottom: 1px solid #E18298;
     }
-
-
-    // @media screen and (max-height: 500px) {
-    //   margin-bottom: 10px;
-    // } 
   }
 
   &__page {
-    color: $white-color;
+    color: #ffffff;
     text-decoration: none;
 
     font-family: 'DM Sans';
@@ -78,9 +71,6 @@
     display: flex;
     align-items: center;
     justify-content: left;
-
-    // @media screen and (max-height: 500px) {
-    //   font-weight: 500;
 
     &:hover,
     &:focus {
