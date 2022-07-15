@@ -1,0 +1,133 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.example {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #2f2f37;
+  max-width: 960px;
+  padding: 16px;
+}
+
+.example code {
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #ff6b0a;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.example .background {
+  height: 240px;
+  background-image: url("../images/logo.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 60px 20px;
+  text-align: center;
+  align-items: center;
+  z-index: 1;
+  background: #E17992;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.menu.is-open {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-height: 500px) {
+  .menu.is-open {
+    padding-top: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu.is-open {
+    width: 250px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu.is-open {
+    display: none;
+  }
+}
+.menu__button {
+  width: 209px;
+  height: 44px;
+  border-radius: 22px;
+  background-color: #ffffff;
+  border: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.menu__button:hover, .menu__button:focus {
+  color: #d41443;
+}
+.menu__marker {
+  border-top: 1px solid #E18298;
+  width: 250px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+}
+.menu__marker:last-child {
+  border-bottom: 1px solid #E18298;
+}
+.menu__page {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.menu__page:hover, .menu__page:focus {
+  color: #d41443;
+}
+.menu__page__active {
+  color: #d41443;
+}
+
+.nav__icon-menu {
+  fill: #d41443;
+}
+.nav__icon-cross {
+  fill: #ffffff;
+}
+.nav__button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  z-index: 2;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .nav__button {
+    display: none;
+  }
+}
+.nav__button .nav__icon-cross {
+  display: none;
+}
+.nav__button.is-open {
+  position: fixed;
+}
+.nav__button.is-open.is-open .nav__icon-cross {
+  display: block;
+}
+.nav__button.is-open.is-open .nav__icon-menu {
+  display: none;
+}/*# sourceMappingURL=index.css.map */
