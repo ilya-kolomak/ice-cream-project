@@ -1,0 +1,254 @@
+.contacts {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-color: #FFF5F6;
+
+    &__grid {
+        @include tablet {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 60px;
+        }
+    
+        @include desktop {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__card {
+        background: $text-white-color;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+        width: 280px;
+        padding: 40px 32px;
+    
+        @include tablet {
+            width: 224px;
+            margin-right: 32px;
+        }
+    
+        @include desktop {
+            width: 368px;
+            padding: 40px;
+        }
+    }
+}
+
+
+.contacts__card:not(:last-child) {
+    margin-bottom: 20px;
+    @include tablet {
+        margin-bottom: 0;
+    }
+
+}
+
+.contacts__card:last-child {
+    margin-bottom: 32px;
+    @include tablet {
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+
+}
+
+.content__item {
+    border-bottom: 1px solid #E1E1E1;
+
+    margin-bottom: 24px;
+
+    @include tablet {
+        margin-bottom: 32px;
+    }
+}
+
+.content__type {
+    width: 80px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.8;
+    text-align: center;
+    color: $text-white-color;
+    letter-spacing: 0.04em;
+    background: #F0D1A5;
+    border-radius: 4px;
+
+    margin-bottom: 20px;
+
+    @include tablet {
+        margin-bottom: 32px;
+        font-size: 16px;
+    }
+}
+
+.content__type.foodtruck {
+    background: #C2E297;
+    width: 130px;
+}
+
+.content__place {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.8;
+      letter-spacing: 0.04em;
+
+      color: #000000;
+
+      margin-bottom: 8px;
+
+      @include tablet {
+        font-size: 14px;
+        line-height: 1.8;
+     }
+}
+
+.content__text {  
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+
+     color: #907E82;
+     max-width: 179px;
+     margin-bottom: 24px;
+
+     @include tablet {
+        margin-bottom: 32px;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    @include desktop {
+        font-size: 16px;
+    }
+}
+
+.content__days {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.8;
+
+       color: #000000;
+
+       @include tablet {
+        font-size: 14px;
+        line-height: 1.8;
+     }
+
+     @include desktop {
+        font-size: 16px;
+    }
+}
+
+.content__time {
+     font-weight: 500;
+     font-size: 12px;
+     line-height: 1.8;
+
+     color: #FFA5BA;
+
+     @include tablet {
+        font-size: 14px;
+        line-height: 1.8;
+     }
+
+     @include desktop {
+        font-size: 16px;
+    }
+}
+
+.content__time:not(:last-child) {
+    margin-bottom: 8px;
+
+    @include tablet {
+        margin-bottom: 12px;
+    }
+}
+
+.content__time:last-child{
+    margin-bottom: 24px;
+
+    @include tablet {
+        margin-bottom: 32px;
+    }
+}
+
+.contact {
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: #907E82;
+
+    @include tablet {
+        font-size: 14px;
+        line-height: 1.8;
+     }
+}
+
+// .contact:hover,
+// .contact:focus {
+//     color: $accent-color;
+// }
+
+.buttons {
+    @include tablet {
+       display: flex;
+       justify-content: center;
+    }
+}
+
+.contacts__btn {
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+    height: 44px;
+    min-width: 162px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3;
+    border: none;
+
+    @include tablet {
+       margin: 0;
+       margin-right: 15px;
+       min-width: 191px;
+     }
+}
+
+
+.location__btn {
+    background-color: $accent-color;
+    color: $text-white-color;
+}
+
+.location__btn:focus,
+.location__btn:hover {
+    background-color: $text-white-color;
+    color: $accent-color;
+}
+
+.franchise__btn {
+    background-color: $text-white-color;
+    color: $accent-color;
+
+    @include tablet {
+        margin-right: 0px;
+        min-width: 168px;
+      }
+}
+
+.franchise__btn:hover,
+.franchise__btn:focus {
+    background-color: $accent-color;
+    color: $text-white-color;
+}
+
+.icon {
+width: 6px;
+height: 10px;
+margin-left: 11px;
+}
