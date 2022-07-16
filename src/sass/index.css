@@ -110,18 +110,33 @@ img {
   }
 }
 
-.header .conteiner {
+.header_conteiner {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.header_buton {
-  width: 160px;
+.header-logo {
+  fill: #D41443;
+  stroke: #ffffff;
+}
+
+.header_button {
+  display: none;
 }
 @media screen and (min-width: 768px) {
-  .header_buton {
-    display: none;
+  .header_button {
+    display: block;
+    max-width: 100%;
+    height: 44px;
+    padding: 0 40px;
+    border-radius: 22px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    color: #d41443;
+    background-color: #ffffff;
   }
 }
 
@@ -135,8 +150,16 @@ img {
   }
 }
 
-.hero .conteiner {
-  display: flex;
+.hero {
+  background-color: #FFB8CA;
+  padding: 200px 0 302px 0;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 208px 0;
+  }
 }
 
 .hero_circle {
@@ -183,6 +206,61 @@ img {
   }
 }
 
+.hero_title {
+  width: 218px;
+  margin-bottom: 20px;
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.36;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .hero_title {
+    width: 162px;
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero_title {
+    width: 277px;
+    font-size: 38px;
+  }
+}
+
+.title--accent-color {
+  color: #D41443;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 96.5%;
+}
+@media screen and (min-width: 768px) {
+  .title--accent-color {
+    font-size: 34px;
+  }
+}
+
+.hero_button {
+  border: none;
+  border-radius: 20px;
+  background-color: #ffffff;
+  color: #D41443;
+  padding: 0 15px;
+  max-width: 100%;
+  height: 24px;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  transition: color 300ms linear, background-color 300ms linear;
+}
+.hero_button:hover, .hero_button:focus {
+  background-color: #D41443;
+  color: #ffffff;
+}
+
 .pictute_milk {
   display: none;
 }
@@ -218,28 +296,6 @@ img {
   }
 }
 
-.hero_title {
-  width: 218px;
-  margin-bottom: 20px;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 30px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-@media screen and (min-width: 768px) {
-  .hero_title {
-    width: 218px;
-    font-size: 25px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero_title {
-    width: 277px;
-    font-size: 38px;
-  }
-}
-
 .nav_item:not(:last-child) {
   margin-right: 35px;
 }
@@ -255,14 +311,14 @@ img {
 
 .photo-conteiner {
   display: none;
-  position: absolute;
-  bottom: 16px;
-  display: flex;
-  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .photo-conteiner {
     display: block;
+    position: absolute;
+    bottom: 16px;
+    display: flex;
+    align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -348,7 +404,8 @@ img {
     z-index: -1;
     width: 16px;
     height: 16px;
-    right: 5px;
+    top: -2px;
+    right: -6px;
     border-radius: 50%;
     background-color: #ffffff;
   }

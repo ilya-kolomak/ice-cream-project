@@ -16,18 +16,32 @@
   }
 }
 
-.header .conteiner {
+.header_conteiner {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.header_buton {
-  @include tablet {
-    display: none;
-  }
+.header-logo {
+  fill: $accent-color;
+  stroke: $text-white-color;
+}
 
-  width: 160px;
+.header_button {
+  display: none;
+  @include tablet {
+    display: block;
+    max-width: 100%;
+    height: 44px;
+    padding: 0 40px;
+    border-radius: 22px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    color: #d41443;
+    background-color: $text-white-color;
+  }
 }
 
 .nav_list {
@@ -37,8 +51,16 @@
     align-items: center;
   }
 }
-.hero .conteiner {
-  display: flex;
+
+.hero {
+  background-color: $background-header;
+  padding: 200px 0 302px 0;
+  position: relative;
+  overflow: hidden;
+
+  @include tablet {
+    padding: 208px 0;
+  }
 }
 
 .hero_circle {
@@ -81,6 +103,60 @@
   }
 }
 
+.hero_title {
+  width: 218px;
+  margin-bottom: 20px;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.36;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $text-white-color;
+
+  @include tablet {
+    width: 162px;
+    font-size: 22px;
+  }
+
+  @include desktop {
+    width: 277px;
+    font-size: 38px;
+  }
+}
+
+.title--accent-color {
+  color: $accent-color;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 96.5%;
+
+  @include tablet {
+    font-size: 34px;
+  }
+}
+
+.hero_button {
+  border: none;
+  border-radius: 20px;
+  background-color: $text-white-color;
+  color: $accent-color;
+  padding: 0 15px;
+  max-width: 100%;
+  height: 24px;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  transition: color 300ms linear, background-color 300ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $text-white-color;
+  }
+}
+
 .pictute_milk {
   display: none;
   @include tablet {
@@ -110,26 +186,6 @@
   }
 }
 
-.hero_title {
-  width: 218px;
-  margin-bottom: 20px;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 30px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-
-  @include tablet {
-    width: 218px;
-    font-size: 25px;
-  }
-
-  @include desktop {
-    width: 277px;
-    font-size: 38px;
-  }
-}
-
 .nav_item:not(:last-child) {
   margin-right: 35px;
 }
@@ -146,11 +202,11 @@
   display: none;
   @include tablet {
     display: block;
+    position: absolute;
+    bottom: 16px;
+    display: flex;
+    align-items: center;
   }
-  position: absolute;
-  bottom: 16px;
-  display: flex;
-  align-items: center;
 
   @include desktop {
     bottom: 60px;
@@ -229,7 +285,8 @@
       z-index: -1;
       width: 16px;
       height: 16px;
-      right: 5px;
+      top: -2px;
+      right: -6px;
       border-radius: 50%;
       background-color: $text-white-color;
     }
