@@ -1,7 +1,15 @@
 .contacts {
     padding-top: 60px;
     padding-bottom: 40px;
-    background-color: #FFF5F6;
+    background-image: linear-gradient(#fff 24%, #fff5f6 24%, #fff5f6 76%);
+
+    @include tablet {
+        background-image: linear-gradient(#fff 48%, #fff5f6 48%, #fff5f6 52%);
+    }
+
+    @include desktop {
+        background-image: linear-gradient(#fff 20%, #fff5f6 20%, #fff5f6 80%);
+    }
 
     &__grid {
         @include tablet {
@@ -94,7 +102,7 @@
       line-height: 1.8;
       letter-spacing: 0.04em;
 
-      color: #000000;
+      color: $text-black-color;
 
       margin-bottom: 8px;
 
@@ -109,7 +117,7 @@
     font-size: 12px;
     line-height: 1.5;
 
-     color: #907E82;
+     color: $text-gray-color;
      max-width: 179px;
      margin-bottom: 24px;
 
@@ -129,7 +137,7 @@
       font-size: 12px;
       line-height: 1.8;
 
-       color: #000000;
+       color: $text-black-color;
 
        @include tablet {
         font-size: 14px;
@@ -146,7 +154,7 @@
      font-size: 12px;
      line-height: 1.8;
 
-     color: #FFA5BA;
+     color: $text-icon-time-pink;
 
      @include tablet {
         font-size: 14px;
@@ -180,7 +188,7 @@
     font-size: 12px;
     line-height: 1.5;
 
-    color: #907E82;
+    color: $text-gray-color;
 
     @include tablet {
         font-size: 14px;
@@ -188,15 +196,14 @@
      }
 }
 
-// .contact:hover,
-// .contact:focus {
-//     color: $accent-color;
-// }
-
 .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     @include tablet {
        display: flex;
        justify-content: center;
+       flex-direction: row;
     }
 }
 
@@ -223,32 +230,65 @@
 .location__btn {
     background-color: $accent-color;
     color: $text-white-color;
-}
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.location__btn:focus,
-.location__btn:hover {
+    &:focus,
+    &:hover {
     background-color: $text-white-color;
     color: $accent-color;
+    &::after {
+        background-image: url(../images/products/arrow-pink.svg);
+    }
 }
+
+    &::after {
+    display: inline-block;
+    content: '';
+    background-image: url(../images/products/arrow-white.svg);
+    width: 8px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    background-position: center;
+    margin-left: 8px;
+
+}
+}
+
 
 .franchise__btn {
     background-color: $text-white-color;
     color: $accent-color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @include tablet {
         margin-right: 0px;
         min-width: 168px;
       }
-}
 
-.franchise__btn:hover,
-.franchise__btn:focus {
+    &:hover,
+    &:focus {
     background-color: $accent-color;
     color: $text-white-color;
+
+    &::after {
+        background-image: url(../images/products/arrow-white.svg);
+    }
 }
 
-.icon {
-width: 6px;
-height: 10px;
-margin-left: 11px;
+    &::after {
+    display: inline-block;
+    content: '';
+    background-image: url(../images/products/arrow-pink.svg);
+    width: 8px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    background-position: center;
+    margin-left: 8px;
+}
 }
