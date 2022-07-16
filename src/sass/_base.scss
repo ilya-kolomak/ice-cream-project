@@ -1,39 +1,36 @@
-.container{
-    width:100%;
-    margin:0 auto;
-    padding-left: 20px;
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
   padding-right: 20px;
-    
-@include mobile{
-  width: 320px;
-}
 
-    @include tablet{
+  @include mobile {
+    width: 320px;
+  }
 
-      width: 768px;
+  @include tablet {
+    width: 768px;
     padding-left: 32px;
     padding-right: 32px;
-    }
+  }
 
-    @include desktop{
-      width: 1200px;
-      padding-left: 16px;
+  @include desktop {
+    width: 1200px;
+    padding-left: 16px;
     padding-right: 16px;
-    }
-
-    }
-    .section{
-      padding-top: 60px;
-      padding-bottom: 60px;}
+  }
+}
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-
-body{
- 
+body {
   font-family: 'DM Sans';
   font-style: normal;
   font-size: 14px;
@@ -41,15 +38,15 @@ body{
   background-color: $text-white-color;
 }
 
-.list{
+.list {
   list-style: none;
 }
 
-a{
-  text-decoration:none;
+a {
+  text-decoration: none;
 }
 
-a:hover, 
-a:focus{
+a:hover,
+a:focus {
   color: $accent-color;
 }
