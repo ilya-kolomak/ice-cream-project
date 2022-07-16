@@ -641,6 +641,261 @@ img {
   background: none;
 }
 
+.contacts {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background-color: #FFF5F6;
+}
+@media screen and (min-width: 768px) {
+  .contacts__grid {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__grid {
+    display: flex;
+    justify-content: center;
+  }
+}
+.contacts__card {
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  width: 280px;
+  padding: 40px 32px;
+}
+@media screen and (min-width: 768px) {
+  .contacts__card {
+    width: 224px;
+    margin-right: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__card {
+    width: 368px;
+    padding: 40px;
+  }
+}
+
+.contacts__card:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .contacts__card:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__card:last-child {
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .contacts__card:last-child {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+}
+
+.content__item {
+  border-bottom: 1px solid #E1E1E1;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .content__item {
+    margin-bottom: 32px;
+  }
+}
+
+.content__type {
+  width: 80px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.8;
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 0.04em;
+  background: #F0D1A5;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .content__type {
+    margin-bottom: 32px;
+    font-size: 16px;
+  }
+}
+
+.content__type.foodtruck {
+  background: #C2E297;
+  width: 130px;
+}
+
+.content__place {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+  color: #000000;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 768px) {
+  .content__place {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}
+
+.content__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907E82;
+  max-width: 179px;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .content__text {
+    margin-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .content__text {
+    font-size: 16px;
+  }
+}
+
+.content__days {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #000000;
+}
+@media screen and (min-width: 768px) {
+  .content__days {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .content__days {
+    font-size: 16px;
+  }
+}
+
+.content__time {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #FFA5BA;
+}
+@media screen and (min-width: 768px) {
+  .content__time {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .content__time {
+    font-size: 16px;
+  }
+}
+
+.content__time:not(:last-child) {
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 768px) {
+  .content__time:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.content__time:last-child {
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .content__time:last-child {
+    margin-bottom: 32px;
+  }
+}
+
+.contact {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907E82;
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.contacts__btn {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  height: 44px;
+  min-width: 162px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  .contacts__btn {
+    margin: 0;
+    margin-right: 15px;
+    min-width: 191px;
+  }
+}
+
+.location__btn {
+  background-color: #D41443;
+  color: #ffffff;
+}
+
+.location__btn:focus,
+.location__btn:hover {
+  background-color: #ffffff;
+  color: #D41443;
+}
+
+.franchise__btn {
+  background-color: #ffffff;
+  color: #D41443;
+}
+@media screen and (min-width: 768px) {
+  .franchise__btn {
+    margin-right: 0px;
+    min-width: 168px;
+  }
+}
+
+.franchise__btn:hover,
+.franchise__btn:focus {
+  background-color: #D41443;
+  color: #ffffff;
+}
+
+.icon {
+  width: 6px;
+  height: 10px;
+  margin-left: 11px;
+}
+
 .footer {
   background-color: #fff5f6;
 }
