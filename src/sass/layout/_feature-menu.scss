@@ -9,17 +9,12 @@
   text-align: center;
   align-items: center;
   z-index: 1;
-
   background: $background-menu;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   &.is-open {
     display: flex;
     flex-direction: column;
-
-    // @media screen and (max-height: 500px) {
-    //   padding-top: 40px;
-    // }
 
     @include tablet {
       width: 250px;
@@ -36,37 +31,23 @@
   &__button {
     width: 209px;
     height: 44px;
-    // border-radius: 22px;
     background-color: $text-white-color;
     color: $accent-color;
     border: none;
     margin-bottom: 20px;
-    // cursor: pointer;
-
+    
     font-family: 'DM Sans';
     font-style: normal;
     @include font(16px, 700, 1.31, null);
-
-    // font-size: 16px;
-    // font-weight: 700;
-    // line-height: 1.31;
-
 
     @include tablet {
       width: 186px;
       height: 44px;
     }
-
-    // &:hover,
-    // &:focus {
-    //   color: #d41443;
-    // }
   }
 
   &__vector {
     margin-left: 15px;
-    // border: 2px solid #D41443;
-
   }
 
   &__list {
@@ -95,10 +76,7 @@
     font-family: 'DM Sans';
     font-style: normal;
     @include font(14px, 700, 1.29, null);
-    // font-weight: 700;
-    // font-size: 14px;
-    // line-height: 1.29;
-
+    
     &:hover,
     &:focus {
       color: $accent-color;
@@ -139,6 +117,7 @@
     }
 
     &.is-open {
+      position: fixed;
 
       & .nav__icon-cross {
         display: block;

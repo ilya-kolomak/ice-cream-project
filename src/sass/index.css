@@ -1288,6 +1288,9 @@ img {
 .nav__button .nav__icon-cross {
   display: none;
 }
+.nav__button.is-open {
+  position: fixed;
+}
 .nav__button.is-open .nav__icon-cross {
   display: block;
 }
