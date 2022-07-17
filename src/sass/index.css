@@ -179,19 +179,22 @@ img {
 
 .hero {
   background-color: #FFB8CA;
-  padding: 200px 0 302px 0;
-  position: relative;
+  height: 502px;
   overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .hero {
-    padding: 208px 0;
+    height: 416px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    padding: 331px 0;
+    height: 664px;
   }
+}
+
+.hero_conteiner {
+  position: relative;
 }
 
 .hero_circle {
@@ -265,6 +268,21 @@ img {
     opacity: 1;
   }
 }
+.title_conteiner {
+  position: absolute;
+  top: 194px;
+}
+@media screen and (min-width: 768px) {
+  .title_conteiner {
+    top: 102px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title_conteiner {
+    top: 147px;
+  }
+}
+
 .hero_title {
   width: 218px;
   margin-bottom: 20px;
@@ -331,41 +349,6 @@ img {
   }
 }
 
-.pictute_milk {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .pictute_milk {
-    display: block;
-  }
-}
-
-.picture_girl {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .picture_girl {
-    display: block;
-    position: absolute;
-    right: 32px;
-    bottom: 0;
-  }
-}
-
-.title_conteiner {
-  position: absolute;
-}
-@media screen and (min-width: 768px) {
-  .title_conteiner {
-    top: 102px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .title_conteiner {
-    top: 147px;
-  }
-}
-
 .photo-conteiner {
   display: none;
 }
@@ -373,7 +356,7 @@ img {
   .photo-conteiner {
     display: block;
     position: absolute;
-    bottom: 16px;
+    top: 246px;
     display: flex;
     align-items: center;
     -webkit-animation-name: changePosition;
@@ -386,7 +369,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .photo-conteiner {
-    bottom: 60px;
+    top: 388px;
   }
 }
 
@@ -434,6 +417,24 @@ img {
   border: none;
   background: none;
   padding: 0;
+}
+
+.picture_girl {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .picture_girl {
+    display: block;
+    position: absolute;
+    right: 32px;
+    top: 265px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .picture_girl {
+    right: 32px;
+    top: 423px;
+  }
 }
 
 .list_conteiner {
