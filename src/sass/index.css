@@ -140,16 +140,22 @@ img {
     background-color: #ffffff;
     transition: color 300ms linear, background-color 300ms linear;
   }
-}
-.header_button:hover, .header_button:focus {
-  color: #ffffff;
-  background-color: #d41443;
-}
-
-.heder_svg {
-  margin-left: 10px;
-  fill: currentColor;
-  stroke: currentColor;
+  .header_button:hover, .header_button:focus {
+    color: #ffffff;
+    background-color: #d41443;
+  }
+  .header_button::after {
+    display: inline-block;
+    content: "";
+    background-image: url(../images/products/arrow-pink.svg);
+    width: 8px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    background-position: center;
+    margin-left: 8px;
+  }
 }
 
 .nav_list {
