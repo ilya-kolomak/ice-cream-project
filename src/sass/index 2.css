@@ -1228,8 +1228,8 @@ img {
   padding-bottom: 20px;
 }
 
-.container--about {
-  @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  .container--about {
     padding-left: 0;
     padding-right: 0;
   }
