@@ -1324,7 +1324,7 @@ img {
   color: #000000;
 }
 .footer__icon {
-  color: #fea5bb;
+  fill: none;
 }
 .footer__link {
   display: flex;
