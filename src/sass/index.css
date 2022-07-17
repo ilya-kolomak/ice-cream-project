@@ -535,7 +535,7 @@ img {
 .list_number {
   position: relative;
   font-family: 'Titan One';
-
+}
 .products__title {
   font-family: "Titan One";
 
@@ -639,7 +639,7 @@ img {
   right: 5px;
   border-radius: 50%;
   background-color: #ffffff;
-
+}
 .products__item::before {
   display: block;
   content: "";
