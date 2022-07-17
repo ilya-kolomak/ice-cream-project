@@ -43,19 +43,26 @@
     color: #d41443;
     background-color: $text-white-color;
     transition: color 300ms linear, background-color 300ms linear;
-  }
 
-  &:hover,
-  &:focus {
-    color: $text-white-color;
-    background-color: #d41443;
-  }
-}
+    &:hover,
+    &:focus {
+      color: $text-white-color;
+      background-color: #d41443;
+    }
 
-.heder_svg {
-  margin-left: 10px;
-  fill: currentColor;
-  stroke: currentColor;
+    &::after {
+      display: inline-block;
+      content: '';
+      background-image: url(../images/products/arrow-pink.svg);
+      width: 8px;
+      height: 10px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-color: transparent;
+      background-position: center;
+      margin-left: 8px;
+    }
+  }
 }
 
 .nav_list {
