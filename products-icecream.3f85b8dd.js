@@ -1,0 +1,2 @@
+("undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:"undefined"!=typeof window?window:"undefined"!=typeof global?global:{}).parcelRequired7c6.register("ge9Si",(function(e,o){var d;(d={openModalBtn:document.querySelector("[data-prod-open-icecream]"),closeModalBtn:document.querySelector("[data-prod-close]"),modal:document.querySelector("[data-prod-icecream]")}).openModalBtn.addEventListener("click",(function(){d.modal.classList.toggle("is-hidden")}))}));
+//# sourceMappingURL=products-icecream.3f85b8dd.js.map

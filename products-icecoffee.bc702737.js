@@ -1,0 +1,2 @@
+("undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:"undefined"!=typeof window?window:"undefined"!=typeof global?global:{}).parcelRequired7c6.register("2HsgU",(function(e,o){(()=>{const e={openModalBtn:document.querySelector("[data-prod-open-icecoffee]"),closeModalBtn:document.querySelector("[data-prod-close]"),modal:document.querySelector("[data-prod-icecoffee]")};e.openModalBtn.addEventListener("click",(function(){e.modal.classList.toggle("is-hidden")}))})()}));
+//# sourceMappingURL=products-icecoffee.bc702737.js.map

@@ -1,0 +1,2 @@
+("undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:"undefined"!=typeof window?window:"undefined"!=typeof global?global:{}).parcelRequired7c6.register("cnxHJ",(function(e,o){(()=>{const e={openModalBtn:document.querySelector("[data-prod-open-icecream]"),closeModalBtn:document.querySelector("[data-prod-close]"),modal:document.querySelector("[data-prod-icecream]")};e.openModalBtn.addEventListener("click",(function(){e.modal.classList.toggle("is-hidden")}))})()}));
+//# sourceMappingURL=products-icecream.ee932fec.js.map

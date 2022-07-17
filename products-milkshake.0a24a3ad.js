@@ -1,0 +1,2 @@
+("undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:"undefined"!=typeof window?window:"undefined"!=typeof global?global:{}).parcelRequired7c6.register("bBIdW",(function(e,o){(()=>{const e={openModalBtn:document.querySelector("[data-prod-open-milk]"),closeModalBtn:document.querySelector("[data-prod-close]"),modal:document.querySelector("[data-prod-milk]")};e.openModalBtn.addEventListener("click",(function(){e.modal.classList.toggle("is-hidden")}))})()}));
+//# sourceMappingURL=products-milkshake.0a24a3ad.js.map
