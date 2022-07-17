@@ -120,6 +120,11 @@ img {
   fill: #D41443;
 }
 
+@media screen and (min-width: 768px) {
+  .header_buton {
+    display: none;
+
+
 .header_button {
   display: none;
 }
@@ -154,6 +159,7 @@ img {
     background-color: transparent;
     background-position: center;
     margin-left: 8px;
+
   }
 }
 
@@ -243,6 +249,8 @@ img {
   }
 }
 
+
+
 .hero_title {
   width: 218px;
   margin-bottom: 20px;
@@ -309,6 +317,7 @@ img {
   }
 }
 
+
 .pictute_milk {
   display: none;
 }
@@ -346,15 +355,21 @@ img {
 
 .photo-conteiner {
   display: none;
+
+  position: absolute;
+  bottom: 16px;
+  display: flex;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .photo-conteiner {
     display: block;
+
     position: absolute;
     bottom: 16px;
     display: flex;
     align-items: center;
-  }
+
 }
 @media screen and (min-width: 1200px) {
   .photo-conteiner {
@@ -389,10 +404,16 @@ img {
 
 .list_conteiner {
   display: none;
+
+  position: absolute;
+  top: 94px;
+  right: 42px;
+
 }
 @media screen and (min-width: 768px) {
   .list_conteiner {
     display: block;
+
     position: absolute;
     top: 94px;
     right: 42px;
@@ -449,15 +470,33 @@ img {
 @media screen and (min-width: 1200px) {
   .list_number {
     font-size: 46px;
+
   }
 }
 
 .list_paragraf {
+
+
+  display: none;
+  font-family: "DM Sans";
+
+
+  font-family: 'DM Sans';
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+  color: #ffffff;
+
+
   display: none;
 }
 @media screen and (min-width: 768px) {
   .list_paragraf {
     display: block;
+
     font-weight: 400;
     font-size: 8px;
     line-height: 1.25;
@@ -468,8 +507,46 @@ img {
 @media screen and (min-width: 1200px) {
   .list_paragraf {
     font-size: 14px;
+
   }
 }
+
+
+.list_number {
+
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .list_number {
+    display: block;
+    position: relative;
+    font-family: "Titan One";
+    font-style: normal;
+    z-index: 1;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.14;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #D41443;
+  }
+  .list_number::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 16px;
+    height: 16px;
+    right: 5px;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+}
+
+  position: relative;
+  font-family: 'Titan One';
+
+
 
 .products__title {
   font-family: "Titan One";
@@ -1496,4 +1573,319 @@ img {
 }
 .nav__button.is-open .nav__icon-menu {
   display: none;
+
+}
+
+
+.backdrop {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  background: #E17992;
+  transition: opacity 300ms, visibility 300ms;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  max-width: 450px;
+  width: 100%;
+  padding: 40px;
+  background-color: #FFB8CA;
+  border-radius: 24px;
+  transform: translate(-50%, -50%) scale(1);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
+}
+
+.modal-title {
+  color: #D41443;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 0.8666666667;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  background: #FFB8CA;
+  height: 30px;
+  border: 1px solid #FFB8CA;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.close-modal-button {
+  fill: #D41443;
+}
+
+.modal-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-field {
+  margin-bottom: 28px;
+}
+
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  color: #E17992;
+  border-radius: 4px;
+  padding-left: 42px;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:focus {
+  border-color: #D41443;
+}
+
+.modal-input:focus + .modal-icon {
+  fill: #D41443;
+}
+
+.modal-wrap {
+  position: relative;
+  margin-top: 4px;
+}
+
+.modal-icon {
+  fill: #E17992;
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-comment {
+  padding: 12px 16px;
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-top: 4px;
+  resize: none;
+  outline: none;
+  color: #E17992;
+}
+
+.modal-label {
+  font-family: "DM Sans";
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #D41443;
+}
+
+.modal-link {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.modal-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: #E17992;
+  color: #ffffff;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #E17992;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.modal-submit:hover, .modal-submit:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background: #D41443;
 }/*# sourceMappingURL=index.css.map */
+
+.advantages {
+  background-color: #fff5f6;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__list {
+    display: flex;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__list {
+    display: flex;
+    gap: 140px;
+  }
+}
+
+.advantages__list-item {
+  max-width: 230px;
+}
+@media screen and (min-width: 768px) {
+  .advantages__list-item {
+    max-width: 163px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__list-item {
+    max-width: 260px;
+  }
+}
+
+.advantages__list-item--milk::before {
+  content: '';
+  display: block;
+  background-image: url('../images/milk.svg');
+  width: 50px;
+  height: 50px;
+  margin-bottom: 16px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  .advantages__list-item--milk::before {
+    margin-bottom: 45px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__list-item--milk::before {
+    margin-bottom: 50px;
+  }
+}
+
+.advantages__list-item--apples::before {
+  content: '';
+  display: block;
+  background-image: url('../images/apples.svg');
+  width: 50px;
+  height: 50px;
+  margin-bottom: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  .advantages__list-item--apples::before {
+    margin-bottom: 45px;
+  }
+}
+
+.advantages__list-item--heart::before {
+  content: '';
+  display: block;
+  background-image: url('../images/heart.svg');
+  width: 50px;
+  height: 50px;
+  margin-bottom: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  .advantages__list-item--heart::before {
+    margin-bottom: 45px;
+  }
+}
+
+.advantages__list-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .advantages__list-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+.advantages__list-item--title {
+  margin-bottom: 25px;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+@media screen and (min-width: 768px) {
+  .advantages__list-item--title {
+    margin-bottom: 20px;
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__list-item--title {
+    margin-bottom: 30px;
+    font-size: 58px;
+  }
+}
+
+.advantages__list-item--text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+@media screen and (min-width: 768px) {
+  .advantages__list-item--text {
+    font-size: 14px;
+    line-height: 1.74;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__list-item--text {
+    font-size: 16px;
+    line-height: 1.76;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
+
+
+}/*# sourceMappingURL=index.css.map */
+
