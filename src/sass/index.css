@@ -1356,6 +1356,18 @@ img {
 
   transition: background-color 250ms linear;
 }
+.about__btn::after {
+  display: inline-block;
+  content: '';
+  background-image: url(../images/products/arrow-pink.svg);
+  width: 8px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  background-position: center;
+  margin-left: 8px;
+}
 
 @media screen and (min-width: 768px) {
   .about__btn:hover,
@@ -1387,7 +1399,6 @@ img {
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('/images/about_images/milk-desktop-2.jpg');
     }
   }
 }
