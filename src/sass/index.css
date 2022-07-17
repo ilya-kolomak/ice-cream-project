@@ -121,11 +121,6 @@ img {
   stroke: #ffffff;
 }
 
-@media screen and (min-width: 768px) {
-  .header_buton {
-    display: none;
-
-
 .header_button {
   display: none;
 }
@@ -160,7 +155,6 @@ img {
     background-color: transparent;
     background-position: center;
     margin-left: 8px;
-
   }
 }
 
@@ -250,8 +244,6 @@ img {
   }
 }
 
-
-
 .hero_title {
   width: 218px;
   margin-bottom: 20px;
@@ -318,7 +310,6 @@ img {
   }
 }
 
-
 .pictute_milk {
   display: none;
 }
@@ -356,21 +347,15 @@ img {
 
 .photo-conteiner {
   display: none;
-
-  position: absolute;
-  bottom: 16px;
-  display: flex;
-  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .photo-conteiner {
     display: block;
-
     position: absolute;
     bottom: 16px;
     display: flex;
     align-items: center;
-
+  }
 }
 @media screen and (min-width: 1200px) {
   .photo-conteiner {
@@ -405,16 +390,10 @@ img {
 
 .list_conteiner {
   display: none;
-
-  position: absolute;
-  top: 94px;
-  right: 42px;
-
 }
 @media screen and (min-width: 768px) {
   .list_conteiner {
     display: block;
-
     position: absolute;
     top: 94px;
     right: 42px;
@@ -471,33 +450,15 @@ img {
 @media screen and (min-width: 1200px) {
   .list_number {
     font-size: 46px;
-
   }
 }
 
 .list_paragraf {
-
-
-  display: none;
-  font-family: "DM Sans";
-
-
-  font-family: 'DM Sans';
-
-  font-style: normal;
-  font-weight: 400;
-  font-size: 8px;
-  line-height: 1.25;
-  text-align: right;
-  color: #ffffff;
-
-
   display: none;
 }
 @media screen and (min-width: 768px) {
   .list_paragraf {
     display: block;
-
     font-weight: 400;
     font-size: 8px;
     line-height: 1.25;
@@ -508,46 +469,8 @@ img {
 @media screen and (min-width: 1200px) {
   .list_paragraf {
     font-size: 14px;
-
   }
 }
-
-
-.list_number {
-
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .list_number {
-    display: block;
-    position: relative;
-    font-family: "Titan One";
-    font-style: normal;
-    z-index: 1;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 1.14;
-    text-align: right;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #D41443;
-  }
-  .list_number::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    width: 16px;
-    height: 16px;
-    right: 5px;
-    border-radius: 50%;
-    background-color: #ffffff;
-  }
-}
-
-  position: relative;
-  font-family: 'Titan One';
-
-
 
 .products__title {
   font-family: "Titan One";
@@ -836,13 +759,6 @@ img {
   background: none;
 }
 
-
-.gallery-images {
-  margin-bottom: 2px;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
-  transition-delay: 0;
-
 .advantages {
   background-color: #fff5f6;
   padding-top: 30px;
@@ -860,7 +776,6 @@ img {
     display: flex;
     gap: 20px;
   }
-
 }
 @media screen and (min-width: 1200px) {
   .advantages__list {
@@ -1020,7 +935,6 @@ img {
     margin-bottom: 45px;
   }
 }
-
 .gallery-list__images {
   margin-bottom: 2px;
   transition-duration: 500ms;
@@ -1040,7 +954,6 @@ img {
 .gallery-list__images:hover, .gallery-list__images:focus {
   transform: scale(1.3);
 }
-
 
 .contacts {
   padding-top: 60px;
@@ -1593,9 +1506,7 @@ img {
 }
 .nav__button.is-open .nav__icon-menu {
   display: none;
-
 }
-
 
 .backdrop {
   z-index: 1;
@@ -1757,155 +1668,3 @@ img {
   border-radius: 4px;
   background: #D41443;
 }/*# sourceMappingURL=index.css.map */
-
-.advantages {
-  background-color: #fff5f6;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-@media screen and (min-width: 1200px) {
-  .advantages {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .advantages__list {
-    display: flex;
-    gap: 20px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .advantages__list {
-    display: flex;
-    gap: 140px;
-  }
-}
-
-.advantages__list-item {
-  max-width: 230px;
-}
-@media screen and (min-width: 768px) {
-  .advantages__list-item {
-    max-width: 163px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .advantages__list-item {
-    max-width: 260px;
-  }
-}
-
-.advantages__list-item--milk::before {
-  content: '';
-  display: block;
-  background-image: url('../images/milk.svg');
-  width: 50px;
-  height: 50px;
-  margin-bottom: 16px;
-  background-position: left;
-  background-repeat: no-repeat;
-}
-@media screen and (min-width: 768px) {
-  .advantages__list-item--milk::before {
-    margin-bottom: 45px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .advantages__list-item--milk::before {
-    margin-bottom: 50px;
-  }
-}
-
-.advantages__list-item--apples::before {
-  content: '';
-  display: block;
-  background-image: url('../images/apples.svg');
-  width: 50px;
-  height: 50px;
-  margin-bottom: 16px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-@media screen and (min-width: 768px) {
-  .advantages__list-item--apples::before {
-    margin-bottom: 45px;
-  }
-}
-
-.advantages__list-item--heart::before {
-  content: '';
-  display: block;
-  background-image: url('../images/heart.svg');
-  width: 50px;
-  height: 50px;
-  margin-bottom: 16px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-@media screen and (min-width: 768px) {
-  .advantages__list-item--heart::before {
-    margin-bottom: 45px;
-  }
-}
-
-.advantages__list-item:not(:last-child) {
-  margin-bottom: 30px;
-}
-@media screen and (min-width: 768px) {
-  .advantages__list-item:not(:last-child) {
-    margin-bottom: 0;
-  }
-}
-
-.advantages__list-item--title {
-  margin-bottom: 25px;
-  font-family: 'Titan One';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 1.14;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #d41443;
-}
-@media screen and (min-width: 768px) {
-  .advantages__list-item--title {
-    margin-bottom: 20px;
-    font-size: 48px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .advantages__list-item--title {
-    margin-bottom: 30px;
-    font-size: 58px;
-  }
-}
-
-.advantages__list-item--text {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.7;
-  letter-spacing: 0.02em;
-  color: #000000;
-}
-@media screen and (min-width: 768px) {
-  .advantages__list-item--text {
-    font-size: 14px;
-    line-height: 1.74;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .advantages__list-item--text {
-    font-size: 16px;
-    line-height: 1.76;
-  }
-}
-
-/*# sourceMappingURL=index.css.map */
-
-
-}/*# sourceMappingURL=index.css.map */
-
