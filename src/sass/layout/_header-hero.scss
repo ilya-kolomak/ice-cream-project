@@ -48,6 +48,9 @@
     &:focus {
       color: $text-white-color;
       background-color: #d41443;
+      &::after {
+        background-image: url(../images/products/arrow-white.svg);
+      }
     }
 
     &::after {
