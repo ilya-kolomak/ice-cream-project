@@ -45,8 +45,7 @@
 
     &:hover,
     &:focus {
-      color: $text-white-color;
-      background-color: #d41443;
+      background-color: #ecebeb;
     }
 
     &::after {
@@ -55,10 +54,6 @@
       background-image: url(../images/products/arrow-pink.svg);
       width: 8px;
       height: 10px;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-color: transparent;
-      background-position: center;
       margin-left: 8px;
     }
   }
@@ -91,17 +86,20 @@
 
 .hero {
   background-color: $background-header;
-  padding: 200px 0 302px 0;
-  position: relative;
+  height: 502px;
   overflow: hidden;
 
   @include tablet {
-    padding: 208px 0;
+    height: 416px;
   }
 
   @include desktop {
-    padding: 331px 0;
+    height: 664px;
   }
+}
+
+.hero_conteiner {
+  position: relative;
 }
 
 .hero_circle {
@@ -136,11 +134,39 @@
   @include tablet {
     top: 80px;
     left: 322px;
+    animation-name: fade-bottom-to-top;
+    animation-duration: 800ms;
+    animation-timing-function: linear;
   }
 
   @include desktop {
     top: 118px;
     left: 630px;
+  }
+}
+
+@keyframes fade-bottom-to-top {
+  from {
+    transform: translatey(350px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.title_conteiner {
+  position: absolute;
+  top: 194px;
+
+  @include tablet {
+    top: 102px;
+  }
+
+  @include desktop {
+    top: 147px;
   }
 }
 
@@ -207,47 +233,33 @@
   }
 }
 
-.pictute_milk {
-  display: none;
-  @include tablet {
-    display: block;
-  }
-}
-
-.picture_girl {
-  display: none;
-  @include tablet {
-    display: block;
-  }
-  position: absolute;
-  right: 32px;
-  bottom: 0;
-}
-
-.title_conteiner {
-  position: absolute;
-
-  @include tablet {
-    top: 102px;
-  }
-
-  @include desktop {
-    top: 147px;
-  }
-}
-
 .photo-conteiner {
   display: none;
   @include tablet {
     display: block;
     position: absolute;
-    bottom: 16px;
+    top: 246px;
     display: flex;
     align-items: center;
+    animation-name: changePosition;
+    animation-duration: 800ms;
+    animation-timing-function: linear;
   }
 
   @include desktop {
-    bottom: 60px;
+    top: 388px;
+  }
+}
+
+@keyframes changePosition {
+  from {
+    transform: translateX(-250px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -273,6 +285,20 @@
   border: none;
   background: none;
   padding: 0;
+}
+
+.picture_girl {
+  display: none;
+  @include tablet {
+    display: block;
+    position: absolute;
+    right: 32px;
+    top: 265px;
+  }
+  @include desktop {
+    right: 32px;
+    top: 423px;
+  }
 }
 
 .list_conteiner {
