@@ -2,20 +2,24 @@
   <div class="container header_conteiner">
     <a href="./index.html" class="logo-link">
       <svg class="header-logo" width="199" height="50">
-        <use href="./images/sprite.svg#icon-logo"></use>
+        <use href="./images/sprite-and-fill.svg#icon-logo"></use>
       </svg>
     </a>
     <nav>
       <ul class="nav_list list">
-        <li class="nav_item"><a href="#" class="nav_link">Home</a></li>
-        <li class="nav_item"><a href="#" class="nav_link">About us</a></li>
+        <li class="nav_item"><a href="#Home" class="nav_link">Home</a></li>
         <li class="nav_item">
-          <a href="#" class="nav_link">How it’s made?</a>
+          <a href="#About us" class="nav_link">About us</a>
         </li>
         <li class="nav_item">
-          <a href="#" class="nav_link">Our products</a>
+          <a href="#How it’s made?" class="nav_link">How it’s made?</a>
         </li>
-        <li class="nav_item"><a href="#" class="nav_link">Contact</a></li>
+        <li class="nav_item">
+          <a href="#How it’s made?" class="nav_link">Our products</a>
+        </li>
+        <li class="nav_item">
+          <a href="#Contact" class="nav_link">Contact</a>
+        </li>
       </ul>
     </nav>
     <div>
@@ -29,7 +33,12 @@
           <use href="#"></use>
         </svg>
       </button> -->
-      <button type="button" class="header_button">Buy now</button>
+      <button type="button" class="header_button">
+        Buy now
+        <!-- <svg class="header_svg" width="83" height="32">
+          <use href="#"></use>
+        </svg> -->
+      </button>
     </div>
   </div>
 </header>
@@ -91,7 +100,32 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et
           </p>
-          <button type="button" class="button_paragraf"></button>
+          <button type="button" class="button_paragraf">
+            <picture>
+              <source
+                srcset="
+                  ./images/products/arrow-right-1x.png 1x,
+                  ./images/products/arrow-right-2x.png 2x
+                "
+                width="28"
+                height="28"
+                media="(min-width:1200px)"
+              />
+              <source
+                srcset="
+                  ./images/products/arrow-right-1x.png 1x,
+                  ./images/products/arrow-right-2x.png 2x
+                "
+                width="18"
+                height="18"
+                media="(min-width:768px)"
+              />
+              <img
+                src="./images/products/arrow-right-1x.png"
+                alt="detailed product description"
+              />
+            </picture>
+          </button>
         </div>
       </div>
       <picture class="picture_girl">
@@ -114,13 +148,13 @@
           alt="girl with ice cream   "
         />
       </picture>
-      <div>
-        <ul class="list_conteiner list">
-          <li>
+      <div class="list_conteiner">
+        <ul class="list">
+          <li class="list_item">
             <span class="list_number">16</span>
             <p class="list_paragraf">cafes</p>
           </li>
-          <li>
+          <li class="list_item">
             <span class="list_number">23</span>
             <p class="list_paragraf">food trucks</p>
           </li>
