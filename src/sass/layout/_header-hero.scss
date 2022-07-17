@@ -94,17 +94,20 @@
 
 .hero {
   background-color: $background-header;
-  padding: 200px 0 302px 0;
-  position: relative;
+  height: 502px;
   overflow: hidden;
 
   @include tablet {
-    padding: 208px 0;
+    height: 416px;
   }
 
   @include desktop {
-    padding: 331px 0;
+    height: 664px;
   }
+}
+
+.hero_header {
+  position: relative;
 }
 
 .hero_circle {
@@ -144,6 +147,19 @@
   @include desktop {
     top: 118px;
     left: 630px;
+  }
+}
+
+.title_conteiner {
+  position: absolute;
+  top: 194px;
+
+  @include tablet {
+    top: 102px;
+  }
+
+  @include desktop {
+    top: 147px;
   }
 }
 
@@ -210,47 +226,33 @@
   }
 }
 
-.pictute_milk {
-  display: none;
-  @include tablet {
-    display: block;
-  }
-}
-
-.picture_girl {
-  display: none;
-  @include tablet {
-    display: block;
-  }
-  position: absolute;
-  right: 32px;
-  bottom: 0;
-}
-
-.title_conteiner {
-  position: absolute;
-
-  @include tablet {
-    top: 102px;
-  }
-
-  @include desktop {
-    top: 147px;
-  }
-}
-
 .photo-conteiner {
   display: none;
   @include tablet {
     display: block;
     position: absolute;
-    bottom: 16px;
+    top: 246px;
     display: flex;
     align-items: center;
+    animation-name: fade-left-to-right;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
   }
 
   @include desktop {
-    bottom: 60px;
+    top: 388px;
+  }
+}
+
+@keyframes fade-left-to-right {
+  from {
+    transform: translateX(-250px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -276,6 +278,20 @@
   border: none;
   background: none;
   padding: 0;
+}
+
+.picture_girl {
+  display: none;
+  @include tablet {
+    display: block;
+    position: absolute;
+    right: 32px;
+    top: 265px;
+  }
+
+  @include desktop {
+    top: 423px;
+  }
 }
 
 .list_conteiner {
