@@ -100,6 +100,7 @@
 
 .hero_conteiner {
   position: relative;
+  overflow: hidden;
 }
 
 .hero_circle {
@@ -127,9 +128,9 @@
 }
 
 .picture_ice {
-  position: absolute;
-  top: 92px;
-  left: 117px;
+  // position: absolute;
+  // top: 92px;
+  // left: 117px;
 
   @include tablet {
     top: 80px;
@@ -140,14 +141,14 @@
   }
 
   @include desktop {
-    top: 118px;
+    top: 108px;
     left: 630px;
   }
 }
 
 @keyframes fade-bottom-to-top {
   from {
-    transform: translatey(350px);
+    transform: translatey(250px);
     opacity: 0;
   }
 
