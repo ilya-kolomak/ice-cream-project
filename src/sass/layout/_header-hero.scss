@@ -30,10 +30,11 @@
 .header_button {
   display: none;
   @include tablet {
-    display: block;
-    max-width: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 159px;
     height: 44px;
-    padding: 0 40px;
+    padding: 0 37px;
     border-radius: 22px;
     border: none;
     font-weight: 700;
@@ -41,7 +42,20 @@
     line-height: 1.31;
     color: #d41443;
     background-color: $text-white-color;
+    transition: color 300ms linear, background-color 300ms linear;
   }
+
+  &:hover,
+  &:focus {
+    color: $text-white-color;
+    background-color: #d41443;
+  }
+}
+
+.heder_svg {
+  margin-left: 10px;
+  fill: currentColor;
+  stroke: currentColor;
 }
 
 .nav_list {
@@ -49,6 +63,23 @@
   @include desktop {
     display: flex;
     align-items: center;
+  }
+}
+
+.nav_item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.nav_link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: $text-white-color;
+  transition: color 300ms linear;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
   }
 }
 
@@ -60,6 +91,10 @@
 
   @include tablet {
     padding: 208px 0;
+  }
+
+  @include desktop {
+    padding: 331px 0;
   }
 }
 
@@ -135,6 +170,10 @@
   @include tablet {
     font-size: 34px;
   }
+
+  @include desktop {
+    font-size: 58px;
+  }
 }
 
 .hero_button {
@@ -154,6 +193,11 @@
   &:focus {
     background-color: $accent-color;
     color: $text-white-color;
+  }
+
+  @include desktop {
+    font-size: 14px;
+    height: 40px;
   }
 }
 
@@ -186,18 +230,6 @@
   }
 }
 
-.nav_item:not(:last-child) {
-  margin-right: 35px;
-}
-
-.nav_link {
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.31;
-  color: $text-white-color;
-}
 .photo-conteiner {
   display: none;
   @include tablet {
@@ -214,9 +246,7 @@
 }
 
 .paragraf_ice {
-  font-family: 'DM Sans';
-  font-style: normal;
-  width: 114px;
+  width: 119px;
   font-weight: 400;
   font-size: 8px;
   line-height: 1.5;
@@ -226,39 +256,35 @@
   @include desktop {
     font-size: 14px;
     width: 200px;
+    margin-bottom: 20px;
   }
 }
 
 .button_paragraf {
-  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: none;
-  width: 18px;
-  height: 18px;
-  background-color: $text-white-color;
+  background: none;
+  padding: 0;
 }
 
 .list_conteiner {
   display: none;
   @include tablet {
     display: block;
+    position: absolute;
+    top: 94px;
+    right: 42px;
   }
-  position: absolute;
-  top: 94px;
-  right: 42px;
+
+  @include desktop {
+    top: 152px;
+  }
 }
 
-.list_paragraf {
-  display: none;
-  @include tablet {
-    display: block;
-  }
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 8px;
-  line-height: 1.25;
-  text-align: right;
-  color: $text-white-color;
+.list_item:not(:last-child) {
+  margin-bottom: 15px;
 }
 
 .list_number {
@@ -289,6 +315,32 @@
       right: -6px;
       border-radius: 50%;
       background-color: $text-white-color;
+
+      @include desktop {
+        width: 30px;
+        height: 30px;
+        top: -2px;
+        right: -10px;
+      }
     }
+  }
+
+  @include desktop {
+    font-size: 46px;
+  }
+}
+
+.list_paragraf {
+  display: none;
+  @include tablet {
+    display: block;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    text-align: right;
+    color: $text-white-color;
+  }
+  @include desktop {
+    font-size: 14px;
   }
 }
