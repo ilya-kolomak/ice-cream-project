@@ -1,0 +1,2 @@
+("undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:"undefined"!=typeof window?window:"undefined"!=typeof global?global:{}).parcelRequired7c6.register("3MgdP",(function(e,t){(()=>{const e=document.querySelectorAll("[data-menu-button]"),t=e[0],n=document.querySelector("[data-menu]");e.forEach((e=>e.addEventListener("click",(()=>{const e="true"===t.getAttribute("aria-expanded")||!1;t.classList.toggle("is-open"),t.setAttribute("aria-expanded",!e),n.classList.toggle("is-open")}))))})()}));
+//# sourceMappingURL=mobile-menu.7ddb1886.js.map
