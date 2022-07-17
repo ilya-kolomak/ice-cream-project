@@ -151,7 +151,7 @@
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url('');
+    background-image: url('../images/milk-desktop-2.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -159,7 +159,7 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('/images/about_images/milk-desktop-2.jpg');
+      background-image: url('/images/about_images/milk-mobile-2.png');
     }
   }
 }
@@ -177,7 +177,7 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/milkbg-mob-2x.png');
+      background-image: url('/images/about_images/milk-mobile-2.png');
     }
   }
 
