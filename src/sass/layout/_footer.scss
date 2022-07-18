@@ -15,55 +15,45 @@
   &__text-1 {
     font-family: 'Titan One';
     font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.17;
     text-transform: uppercase;
-    margin-top: 40px;
+    margin-top: 0;
     margin-left: 2px;
     display: block;
     width: 230px;
     color: $text-icon-time-pink;
+    @include font(18px, 400, 1.17, null);
 
     @include tablet {
-      font-size: 26px;
-      line-height: 1.15;
-      letter-spacing: 0.04em;
       margin-left: 0;
+      @include font(26px, 400, 1.15, 0.04em);
     }
 
     @include desktop {
       width: initial;
-      font-size: 30px;
-      line-height: 1.13;
+      margin-top: 80px;
+      @include font(30px, 400, 1.13, 0.04em);
     }
   }
 
   &__text-2 {
     font-family: 'Titan One';
     font-style: normal;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: 1.15;
-    letter-spacing: 0.04em;
     text-transform: uppercase;
     margin-top: 16px;
     width: 200px;
     color: $accent-color;
+    @include font(34px, 400, 1.15, 0.04em);
 
     @include tablet {
-      font-size: 48px;
-      line-height: 1.14;
-      letter-spacing: 0.06em;
       margin-left: 0;
       margin-top: 12px;
+      @include font(48px, 400, 1.14, 0.06em);
     }
 
     @include desktop {
       width: initial;
-      font-size: 58px;
-      line-height: 1.14;
-      width: initial;
+      margin-top: 16px;
+      @include font(58px, 400, 1.14, null);
     }
   }
 
@@ -71,13 +61,8 @@
     margin-top: 40px;
     font-family: 'DM Sans';
     font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.86;
-    letter-spacing: 0.02em;
     text-align: end;
-
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    @include font(12px, 700, 1.86, 0.02em);
 
     @include tablet {
       font-size: 14px;
@@ -120,18 +105,16 @@
 
   &__social {
     color: $text-white-color;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.142;
     text-transform: uppercase;
     margin-top: 40px;
+    @include font(14px, 700, 1.142, null);
   }
 
   &__list {
     display: flex;
     align-items: center;
     justify-content: right;
-
+    margin-top: 40px;
 
     &>li {
       margin-right: 30px;
@@ -140,19 +123,22 @@
     &>li:last-child {
       margin-right: 0;
     }
+
+    @include tablet {
+      margin-top: 60px;
+    }
+
+    @include desktop {
+      margin-top: 92px;
+    }
   }
 
   &__copyright {
     font-family: 'DM Sans';
     font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.52;
-    letter-spacing: 0.02em;
-
-    color: #907E82;
-
-    border-top: 1px solid #E1E1E1;
+    @include font(14px, 700, 1.52, 0.02em);
+    color: $text-gray-color;
+    border-top: 1px solid $border-color-gray;
 
     margin-top: 40px;
     margin-bottom: 3px;
@@ -166,6 +152,10 @@
       padding-top: 8px;
       flex-direction: row;
       line-height: 1.86;
+    }
+
+    @include desktop {
+      margin-top: 60px;
     }
   }
 }
