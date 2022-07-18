@@ -19,7 +19,7 @@
     font-size: 18px;
     line-height: 1.17;
     text-transform: uppercase;
-    margin-top: 40px;
+    margin-top: 0;
     margin-left: 2px;
     display: block;
     width: 230px;
@@ -36,6 +36,7 @@
       width: initial;
       font-size: 30px;
       line-height: 1.13;
+      margin-top: 80px;
     }
   }
 
@@ -64,6 +65,7 @@
       font-size: 58px;
       line-height: 1.14;
       width: initial;
+      margin-top: 16px;
     }
   }
 
@@ -76,8 +78,6 @@
     line-height: 1.86;
     letter-spacing: 0.02em;
     text-align: end;
-
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     @include tablet {
       font-size: 14px;
@@ -131,7 +131,7 @@
     display: flex;
     align-items: center;
     justify-content: right;
-
+    margin-top: 40px;
 
     &>li {
       margin-right: 30px;
@@ -139,6 +139,14 @@
 
     &>li:last-child {
       margin-right: 0;
+    }
+
+    @include tablet {
+      margin-top: 60px;
+    }
+
+    @include desktop {
+      margin-top: 92px;
     }
   }
 
@@ -149,7 +157,6 @@
     font-size: 14px;
     line-height: 1.52;
     letter-spacing: 0.02em;
-
     color: #907E82;
 
     border-top: 1px solid #E1E1E1;
@@ -166,6 +173,9 @@
       padding-top: 8px;
       flex-direction: row;
       line-height: 1.86;
+    }
+    @include desktop {
+      margin-top: 60px;
     }
   }
 }
