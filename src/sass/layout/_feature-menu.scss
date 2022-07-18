@@ -62,13 +62,13 @@
 
   &__marker {
 
-    border-top: 1px solid #E18298;
+    border-top: 1px solid $border-color-menu;
     height: 42px;
     display: flex;
     align-items: center;
 
     &:last-child {
-      border-bottom: 1px solid #E18298;
+      border-bottom: 1px solid $border-color-menu;
     }
   }
 
