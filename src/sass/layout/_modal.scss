@@ -42,7 +42,7 @@
   }
   .modal-close-btn{
     position: absolute;
-    top: 20px;
+    top: 35px;
     right: 12px;
     width: 30px;
     background: #FFB8CA;
@@ -51,6 +51,10 @@
   border: 1px solid #FFB8CA;
   border-radius: 50%;
   cursor:pointer;
+  @include tablet{
+    top: 10px;
+    right: 8px;
+  }
   }
  
   .close-modal-button{
