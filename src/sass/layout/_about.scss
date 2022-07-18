@@ -3,30 +3,16 @@
   padding-top: 60px;
   padding-bottom: 20px;
 }
-@include tablet {
-  display: flex;
-}
-
-@include desktop {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url('../images/about_images/milkdesktopx2.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url('../images/about_images/milkmobilex2.png');
-  }
-}
 
 .container--about {
   @include desktop {
     padding-left: 0;
     padding-right: 0;
+    display: flex;
+    background-image: url('../images/about_images/milkdesktopx2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -150,6 +136,27 @@
 
   .about__icon {
     margin-left: 14px;
+  }
+  .overlay {
+    @include tablet {
+      display: flex;
+    }
+  }
+
+  @include desktop {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../images/about_images/milkdesktopx2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/about_images/milkmobilex2.png');
+    }
   }
 
   .about__content {
