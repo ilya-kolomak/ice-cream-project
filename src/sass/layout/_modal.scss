@@ -87,7 +87,7 @@
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     color: $background-menu;
-  border-radius: 4px;
+  border-radius: 22px;
   padding-left: 42px;
     outline: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -122,11 +122,16 @@
     width:100%;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
+  border-radius: 22px;
   margin-top:4px;
   resize: none;
   outline:none;
   color: $background-menu;
+  }
+
+  .modal-comment:hover,
+  .modal-comment:focus {
+    border: 1px solid #D41443;
   }
   
   
@@ -193,12 +198,12 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    width: 200px;
-    height: 50px;
+    width: 180px;
+    height: 40px;
     margin-top: 30px;
     cursor:pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+    // border-radius: 22px;
     background-color: $background-menu;
     color: $text-white-color;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -211,6 +216,6 @@
   }
   .modal-submit:hover,.modal-submit:focus{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  // border-radius: 4px;
   background: #D41443;
   }
