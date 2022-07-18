@@ -9,26 +9,27 @@
   text-align: center;
   align-items: center;
   z-index: 1;
-
-  background: #E17992;
+  background: $background-menu;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  @include tablet {
+    padding-top: 80px;
+    min-height: initial;
+  }
 
   &.is-open {
     display: flex;
     flex-direction: column;
 
-    @media screen and (max-height: 500px) {
-      padding-top: 40px;
-    }
-
-    @media screen and (min-width: 768px) {
+    @include tablet {
       width: 250px;
       position: absolute;
       left: initial;
       right: 0;
+      top: -20px
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       display: none;
     }
   }
@@ -36,16 +37,23 @@
   &__button {
     width: 209px;
     height: 44px;
-    border-radius: 22px;
-    background-color: #ffffff;
+    background-color: $text-white-color;
+    color: $accent-color;
     border: none;
     margin-bottom: 20px;
-    cursor: pointer;
 
-    &:hover,
-    &:focus {
-      color: #d41443;
+    font-family: 'DM Sans';
+    font-style: normal;
+    @include font(16px, 700, 1.31, null);
+
+    @include tablet {
+      width: 186px;
+      height: 44px;
     }
+  }
+
+  &__vector {
+    margin-left: 15px;
   }
 
   &__list {
@@ -54,61 +62,67 @@
 
   &__marker {
 
-    border-top: 1px solid #E18298;
+    border-top: 1px solid $border-color-menu;
     height: 42px;
     display: flex;
     align-items: center;
 
     &:last-child {
-      border-bottom: 1px solid #E18298;
+      border-bottom: 1px solid $border-color-menu;
     }
   }
 
   &__page {
-    color: #ffffff;
+    color: $text-white-color;
     text-decoration: none;
-
-    font-family: 'DM Sans';
-
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.29;
     display: flex;
     align-items: center;
     justify-content: left;
 
+    font-family: 'DM Sans';
+    font-style: normal;
+    @include font(14px, 700, 1.29, null);
+
     &:hover,
     &:focus {
-      color: #d41443;
+      color: $accent-color;
     }
 
     &__active {
-      color: #d41443;
+      color: $accent-color;
     }
   }
 }
 
 .nav {
+  position: relative;
 
   &__icon-menu {
-    fill: #d41443;
+    fill: $accent-color;
   }
 
   &__icon-cross {
-    fill: #ffffff;
+    fill: $text-white-color;
   }
 
   &__button {
     padding: 0;
     border: none;
+    border-radius: initial;
     background-color: transparent;
     z-index: 2;
-    position: absolute;
+    position: fixed;
     right: 20px;
     top: 20px;
 
-    @media screen and (min-width: 1200px) {
+    @include tablet {
+      position: relative;
+      right: initial;
+      top: initial;
+      margin-right: 32px;
+    }
+
+    @include desktop {
       display: none;
     }
 
@@ -117,7 +131,7 @@
     }
 
     &.is-open {
-      
+
       & .nav__icon-cross {
         display: block;
       }
@@ -127,4 +141,9 @@
       }
     }
   }
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
 }

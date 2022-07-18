@@ -159,7 +159,43 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
+<<<<<<< HEAD
       background-image: url('../images/about_images/milkdesktopx2.png');
+=======
+      background-image: url('../images/about_images/milk-mobilex2.png');
+    }
+  }
+
+
+  .about__content {
+    @include tablet {
+      width: 280px;
+      margin-left: auto;
+      margin-right: auto;
+      background-image: url('../images/about_images/milkdesktopx2.png');
+      background-repeat: no-repeat;
+      background-position: 0px 65px;
+      background-size: contain;
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/about_images/milk-mobilex2.png');
+      }
+
+    }
+
+    @include tablet {
+      width: 334px;
+      display: block;
+      margin-left: 32px;
+    }
+
+    @include desktop {
+      width: 463px;
+      margin-top: 90px;
+      margin-left: 99px;
+>>>>>>> main
     }
   }
 }

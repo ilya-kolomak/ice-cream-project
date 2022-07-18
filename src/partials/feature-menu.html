@@ -7,36 +7,34 @@
     data-menu-button
   >
     <svg width="14" height="14" aria-label="Переключатель мобильного меню">
-      <use class="nav__icon-cross" href="./images/sprite.svg#icon-cross"></use>
-      <use
-        class="nav__icon-menu"
-        href="./images/sprite.svg#icon-menu-hed"
-      ></use>
+      <use class="nav__icon-cross" href="./images/sprite.svg#icon-close-new"></use>
+      <use class="nav__icon-menu" href="./images/sprite.svg#icon-Burger-new"></use>
     </svg>
   </button>
 
   <div class="menu" id="menu" data-menu>
-    <button class="menu__button" type="submit">
-      <svg class="" width="83" height="32">
-        <use href="./images/sprite.svg#icon-buy-now-2"></use>
+    <button class="menu__button" type="submit" data-modal-open>
+      <span>Buy now</span>
+      <svg class="menu__vector" width="5" height="8">
+        <use href="./images/sprite.svg#icon-Vector-new"></use>
       </svg>
     </button>
 
     <ul class="menu__list">
       <li class="menu__marker">
-        <a class="menu__page menu__active" href="#">Home</a>
+        <a class="menu__page" href="#home" data-menu-button>Home</a>
       </li>
       <li class="menu__marker">
-        <a class="menu__page" href="#">About us</a>
+        <a class="menu__page" href="#gallery" data-menu-button>About us</a>
       </li>
       <li class="menu__marker">
-        <a class="menu__page" href="#">How it’s made?</a>
+        <a class="menu__page" href="#about" data-menu-button>How it’s made?</a>
       </li>
       <li class="menu__marker">
-        <a class="menu__page" href="#">Our products</a>
+        <a class="menu__page" href="#products" data-menu-button>Our products</a>
       </li>
       <li class="menu__marker">
-        <a class="menu__page" href="#">Contact</a>
+        <a class="menu__page" href="#contacts" data-menu-button>Contact</a>
       </li>
     </ul>
   </div>
