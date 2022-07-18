@@ -11,7 +11,12 @@
   z-index: 1;
   background: $background-menu;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  
+
+  @include tablet {
+    padding-top: 80px;
+    min-height: initial;
+  }
+
   &.is-open {
     display: flex;
     flex-direction: column;
@@ -21,6 +26,7 @@
       position: absolute;
       left: initial;
       right: 0;
+      top: -20px
     }
 
     @include desktop {
@@ -35,7 +41,7 @@
     color: $accent-color;
     border: none;
     margin-bottom: 20px;
-    
+
     font-family: 'DM Sans';
     font-style: normal;
     @include font(16px, 700, 1.31, null);
@@ -76,7 +82,7 @@
     font-family: 'DM Sans';
     font-style: normal;
     @include font(14px, 700, 1.29, null);
-    
+
     &:hover,
     &:focus {
       color: $accent-color;
@@ -89,6 +95,7 @@
 }
 
 .nav {
+  position: relative;
 
   &__icon-menu {
     fill: $accent-color;
@@ -104,9 +111,16 @@
     border-radius: initial;
     background-color: transparent;
     z-index: 2;
-    position: absolute;
+    position: fixed;
     right: 20px;
     top: 20px;
+
+    @include tablet {
+      position: relative;
+      right: initial;
+      top: initial;
+      margin-right: 32px;
+    }
 
     @include desktop {
       display: none;
@@ -117,7 +131,6 @@
     }
 
     &.is-open {
-      position: fixed;
 
       & .nav__icon-cross {
         display: block;
@@ -128,4 +141,9 @@
       }
     }
   }
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
 }
