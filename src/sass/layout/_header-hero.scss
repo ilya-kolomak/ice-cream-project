@@ -44,12 +44,9 @@
     transition: color 300ms linear, background-color 300ms linear;
 
     &:hover,
-    &:focus {
-      color: $text-white-color;
-      background-color: #d41443;
-      &::after {
-        background-image: url(../images/products/arrow-white.svg);
-      }
+  &:focus {
+    background-color: #ecebeb;
+    color:#d41443 ;
     }
 
     &::after {
