@@ -160,7 +160,6 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
 <<<<<<< HEAD
-      background-image: url('../images/about_images/milkdesktopx2.png');
 =======
       background-image: url('../images/about_images/milk-mobilex2.png');
     }
@@ -198,8 +197,7 @@
 >>>>>>> main
     }
   }
-  }
-
+}
 .about__content {
   @media screen and (max-width: 767px) {
     width: 280px;
@@ -229,3 +227,4 @@
     margin-left: 99px;
   }
 }
+  
