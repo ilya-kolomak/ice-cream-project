@@ -2,14 +2,10 @@
   background-color: #fff5f6;
   padding-top: 60px;
   padding-bottom: 20px;
-  background-image: url('../images/about_images/milkdesktopx2.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .container--about {
-  @include desktop {
+  @media screen and (min-width: 1200px) {
     padding-left: 0;
     padding-right: 0;
   }
@@ -29,14 +25,14 @@
 
   color: #ffa5ba;
 
-  @include tablet {
+  @media screen and (min-width: 768px) {
     margin-bottom: 16px;
 
     font-size: 26px;
     line-height: 1.15;
   }
 
-  @include desktop {
+  @media screen and (min-width: 1200px) {
     font-size: 30px;
     line-height: 1.13;
     letter-spacing: 0.04em;
@@ -57,12 +53,12 @@
   text-transform: uppercase;
   color: #d41443;
 
-  @include tablet {
+  @media screen and (min-width: 768px) {
     margin-bottom: 40px;
     font-size: 48px;
   }
 
-  @include desktop {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 60px;
     font-size: 58px;
     line-height: 1.13;
@@ -79,18 +75,18 @@
   line-height: 1.58;
   color: #000000;
 
-  @include tablet {
+  @media screen and (max-width: 767px) {
+    width: 220px;
   }
 
-  @include tablet {
+  @media screen and (min-width: 768px) {
     margin-bottom: 32px;
     font-size: 14px;
     line-height: 1.78;
     letter-spacing: 0.04em;
   }
 
-  @include desktop {
-    width: 463px;
+  @media screen and (min-width: 1200px) {
     font-size: 16px;
     line-height: 1.75;
     letter-spacing: 0.04em;
@@ -104,7 +100,7 @@
     margin-bottom: 0;
   }
 
-  @include desktop {
+  @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.92;
     letter-spacing: 0.04em;
@@ -112,69 +108,88 @@
 }
 
 .about__btn {
-  display: none;
-  @include tablet {
-    display: block;
-    max-width: 100%;
-    height: 44px;
-    padding: 0 40px;
-    border-radius: 22px;
-    border: none;
-    font-weight: 700;
+  display: block;
+  width: 176px;
+  height: 44px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+
+  align-items: center;
+  text-align: center;
+
+  color: #d41443;
+  background-color: #ffffff;
+  border-radius: 22px;
+  border: transparent;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    cursor: pointer;
+    transition: background-color 250ms linear;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
     font-size: 16px;
     line-height: 1.31;
-    color: #d41443;
-    background-color: $text-white-color;
+  }
+}
+
+.about__icon {
+  margin-left: 14px;
+}
+
+.overlay {
+  @media screen and (min-width: 767px) {
+    display: flex;
   }
 
-  .about__icon {
-    margin-left: 14px;
-  }
-  .overlay {
-    @include tablet {
-      display: flex;
-    }
-  }
-
-  @include desktop {
+  @media screen and (min-width: 1200px) {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    background-image: url('../images/about_images/milkdesktopx1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/about_images/milkmobilex2.png');
+      background-image: url('../images/about_images/milkdesktopx2.png');
+    }
+  }
+}
+
+.about__content {
+  @media screen and (max-width: 767px) {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../images/about_images/milk-mobilex1.png');
+    background-repeat: no-repeat;
+    background-position: 0px 65px;
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/about_images/milk-mobilex2.png');
     }
   }
 
-  .about__content {
-    @include tablet {
-      width: 280px;
-      margin-left: auto;
-      margin-right: auto;
-      background-image: url('../images/about_images/milkdesktopx2.png');
-      background-repeat: no-repeat;
-      background-position: 0px 65px;
-      background-size: contain;
+  @media screen and (min-width: 768px) {
+    width: 334px;
+    display: block;
+    margin-left: 32px;
+  }
 
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url('../images/about_images/milkmobilex2.png');
-      }
-    }
-
-    @include tablet {
-      width: 334px;
-      display: block;
-      margin-left: 32px;
-    }
-
-    @include desktop {
-      width: 463px;
-      margin-top: 90px;
-      margin-left: 99px;
-    }
+  @media screen and (min-width: 1200px) {
+    width: 463px;
+    margin-top: 90px;
+    margin-left: 99px;
   }
 }
