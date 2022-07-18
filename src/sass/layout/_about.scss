@@ -3,6 +3,25 @@
   padding-top: 60px;
   padding-bottom: 20px;
 }
+@include tablet {
+  display: flex;
+}
+
+@include desktop {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('../images/about_images/milkdesktopx2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/about_images/milkmobilex2.png');
+  }
+}
 
 .container--about {
   @include desktop {
@@ -87,6 +106,7 @@
   }
 
   @include desktop {
+    width: 463px;
     font-size: 16px;
     line-height: 1.75;
     letter-spacing: 0.04em;
@@ -108,88 +128,57 @@
 }
 
 .about__btn {
-  display: block;
-  width: 176px;
-  height: 44px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.29;
+  background-color: $text-white-color;
+  color: $accent-color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  align-items: center;
-  text-align: center;
-
-  color: #d41443;
-  background-color: #ffffff;
-  border-radius: 22px;
-  border: transparent;
+  @include tablet {
+    margin-right: 0px;
+    min-width: 168px;
+  }
 
   &:hover,
   &:focus {
-    background-color: #ecebeb;
+    background-color: $accent-color;
+    color: $text-white-color;
 
-    transition: background-color 250ms linear;
-  }
-
-  @include tablet {
-    margin-top: 40px;
-    font-size: 16px;
-    line-height: 1.31;
-  }
-}
-
-.about__icon {
-  margin-left: 14px;
-}
-
-.overlay {
-  @include tablet {
-    display: flex;
-  }
-
-  @include desktop {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url('../images/about_images/milkdesktopx2.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../images/about_images/milkmobilex2.png');
-    }
-  }
-}
-
-.about__content {
-  @include tablet {
-    width: 280px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url('../images/milkdesktopx2.png');
-    background-repeat: no-repeat;
-    background-position: 0px 65px;
-    background-size: contain;
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../images/about_images/milkmobilex2.png');
+    &::after {
+      background-image: url(../images/products/arrow-white.svg);
     }
   }
 
-  @include tablet {
-    width: 334px;
-    display: block;
-    margin-left: 32px;
+  .about__icon {
+    margin-left: 14px;
   }
 
-  @include desktop {
-    width: 463px;
-    margin-top: 90px;
-    margin-left: 99px;
+  .about__content {
+    @include tablet {
+      width: 280px;
+      margin-left: auto;
+      margin-right: auto;
+      background-image: url('../images/milkdesktopx2.png');
+      background-repeat: no-repeat;
+      background-position: 0px 65px;
+      background-size: contain;
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/about_images/milkmobilex2.png');
+      }
+    }
+
+    @include tablet {
+      width: 334px;
+      display: block;
+      margin-left: 32px;
+    }
+
+    @include desktop {
+      width: 463px;
+      margin-top: 90px;
+      margin-left: 99px;
+    }
   }
 }
