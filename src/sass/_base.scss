@@ -38,6 +38,10 @@ body {
   background-color: $text-white-color;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .list {
   list-style: none;
 }
