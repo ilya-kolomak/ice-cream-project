@@ -175,3 +175,19 @@
          margin-bottom: 32px;
      }
  }
+ .dot-container {
+    text-align: center;
+    padding: 20px;}
+    .dot {
+        cursor: pointer;
+        height: 12px;
+        width: 12px;
+        margin: 0 2px;
+        background-color: #D9D9D9;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .active, .dot:hover {
+        background-color:#D31342;;
+      }
