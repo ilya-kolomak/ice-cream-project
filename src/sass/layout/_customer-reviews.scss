@@ -1,19 +1,19 @@
 .rev {
-     padding-bottom: 60px;
      padding-top: 60px;
 
      @include tablet {
-         padding-bottom: 80px;
+
          padding-top: 60px;
      }
 
      @include desktop {
-         padding-bottom: 120px;
+    
          padding-top: 120px;
      }
  }
 
  .rev-slider {
+    margin: 0 auto;
      width: 280px;
      height: 100%;
 
@@ -189,5 +189,9 @@
         transition: background-color 0.6s ease;
       }
       .active, .dot:hover {
-        background-color:#D31342;;
+
+        background-image: url(../images/house.svg);
+        background-color: $text-white-color;
+        background-repeat: no-repeat;
+    background-size: contain;
       }
