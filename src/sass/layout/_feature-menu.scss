@@ -12,21 +12,14 @@
   background: $background-menu;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-  @include tablet {
-    padding-top: 80px;
-    min-height: initial;
-  }
-
   &.is-open {
     display: flex;
     flex-direction: column;
 
     @include tablet {
       width: 250px;
-      position: absolute;
       left: initial;
       right: 0;
-      top: -20px
     }
 
     @include desktop {
@@ -131,6 +124,12 @@
     }
 
     &.is-open {
+      @include tablet {
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        margin-right: 0;
+      }
 
       & .nav__icon-cross {
         display: block;
