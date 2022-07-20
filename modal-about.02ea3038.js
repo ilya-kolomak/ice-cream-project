@@ -1,0 +1,2 @@
+("undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:"undefined"!=typeof window?window:"undefined"!=typeof global?global:{}).parcelRequired7c6.register("2fnom",(function(e,o){(()=>{const e={openModalBtn:document.querySelector("[js-modal-open]"),closeModalBtn:document.querySelector("[js-modal-close]"),modal:document.querySelector("[data-modal-about]")};function o(){e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})()}));
+//# sourceMappingURL=modal-about.02ea3038.js.map
