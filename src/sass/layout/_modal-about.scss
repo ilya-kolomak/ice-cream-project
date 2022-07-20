@@ -1,0 +1,51 @@
+
+.modal__about {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    max-width: 450px;
+    width: 100%;
+    padding: 40px;
+    background-color: #FFB8CA;
+    background-image: url('../images//milky.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain, cover;
+    border-radius: 24px;
+    transform: translate(-50%, -50%) scale(1);
+    letter-spacing: normal;
+
+@include desktop {
+        width: 528px;
+        min-height: 581px;
+    }
+}
+.modal-about__item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.modal-about__img {
+    width: 35%;
+}
+
+.modal-about__text-hero {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.58;
+    color: #212121;
+}
+
+.modal-about__text {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.58;
+    color: #907e82;
+}
+
