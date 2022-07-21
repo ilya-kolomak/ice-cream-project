@@ -44,123 +44,122 @@
   </div>
 </header>
 
-  <section class="hero">
-    <div class="container hero_header">
-      <div class="hero_circle"></div>
-      <picture class="picture_ice animate__animated animate__backInUp">
+<section class="hero">
+  <div class="container hero_header">
+    <!-- <div class="hero_circle"></div> -->
+    <picture class="picture_ice animate__animated animate__backInUp">
+      <source
+        srcset="
+          ./images/IceCream_Hero/icehero1comp.png    1x,
+          ./images/IceCream_Hero/icehero1comp@2x.png 2x
+        "
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="
+          ./images/IceCream_Hero/icehero1tab.png    1x,
+          ./images/IceCream_Hero/icehero1tab@2x.png 2x
+        "
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="
+          ./images/IceCream_Hero/icehero1mob.png    1x,
+          ./images/IceCream_Hero/icehero1mob@2x.png 2x
+        "
+        media="(max-width:767px)"
+      />
+      <img src="./images/IceCream_Hero/icehero1tab.png" alt="icecream" />
+    </picture>
+    <div class="title_conteiner">
+      <h1 class="hero_title">
+        ice cream made with <span class="title--accent-color">passion</span>
+      </h1>
+      <a class="hero__products link" href="#products">Products</a>
+      <a class="hero__about link" href="#about">How it's made?</a>
+    </div>
+    <div class="photo-conteiner">
+      <picture class="pictute_milk">
         <source
           srcset="
-            ./images/IceCream_Hero/icehero1comp.png    1x,
-            ./images/IceCream_Hero/icehero1comp@2x.png 2x
+            ./images/hero_milk/milk1comp.png    1x,
+            ./images/hero_milk/milk1comp@2x.png 2x
           "
           media="(min-width:1200px)"
         />
         <source
           srcset="
-            ./images/IceCream_Hero/icehero1tab.png    1x,
-            ./images/IceCream_Hero/icehero1tab@2x.png 2x
+            ./images/hero_milk/milk1tab.png    1x,
+            ./images/hero_milk/milk1tab@2x.png 2x
           "
           media="(min-width:768px)"
         />
-        <source
-          srcset="
-            ./images/IceCream_Hero/icehero1mob.png    1x,
-            ./images/IceCream_Hero/icehero1mob@2x.png 2x
-          "
-          media="(max-width:767px)"
-        />
-        <img src="./images/IceCream_Hero/icehero1tab.png" alt="icecream" />
+        <img src="./images/hero_milk/milk1tab.png" alt="glass of milk " />
       </picture>
-      <div class="title_conteiner">
-        <h1 class="hero_title">
-          ice cream made with <span class="title--accent-color">passion</span>
-        </h1>
-        <a class="hero__products link" href="#products">Products</a>
-        <a class="hero__about link" href="#about">How it's made?</a>
-      </div>
-      <div class="photo-conteiner">
-        <picture class="pictute_milk">
-          <source
-            srcset="
-              ./images/hero_milk/milk1comp.png    1x,
-              ./images/hero_milk/milk1comp@2x.png 2x
-            "
-            media="(min-width:1200px)"
-          />
-          <source
-            srcset="
-              ./images/hero_milk/milk1tab.png    1x,
-              ./images/hero_milk/milk1tab@2x.png 2x
-            "
-            media="(min-width:768px)"
-          />
-          <img src="./images/hero_milk/milk1tab.png" alt="glass of milk " />
-        </picture>
-        <div class="paragraf_conteiner">
-          <p class="paragraf_ice">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et
-          </p>
-          <button type="button" class="button_paragraf">
-            <picture>
-              <source
-                srcset="
-                  ./images/products/arrow-right-1x.png 1x,
-                  ./images/products/arrow-right-2x.png 2x
-                "
-                width="28"
-                height="28"
-                media="(min-width:1200px)"
-              />
-              <source
-                srcset="
-                  ./images/products/arrow-right-1x.png 1x,
-                  ./images/products/arrow-right-2x.png 2x
-                "
-                width="18"
-                height="18"
-                media="(min-width:768px)"
-              />
-              <img
-                src="./images/products/arrow-right-1x.png"
-                alt="detailed product description"
-              />
-            </picture>
-          </button>
-        </div>
-      </div>
-      <picture class="picture_girl animate__animated animate__backInRight">
-        <source
-          srcset="
-            ./images/hero_girl/girl1comp.png    1x,
-            ./images/hero_girl/girl1comp@2x.png 2x
-          "
-          media="(min-width:1200px)"
-        />
-        <source
-          srcset="
-            ./images/hero_girl/girl1tab.png   1x,
-            ./images/hero_girl/gir1tab@2x.png 2x
-          "
-          media="(min-width:768px)"
-        />
-        <img
-          src="./images/hero_girl/girl1tab.png "
-          alt="girl with ice cream   "
-        />
-      </picture>
-      <div class="list_conteiner">
-        <ul class="list animate__animated animate__backInRight">
-          <li class="list_item">
-            <span class="list_number">16</span>
-            <p class="list_paragraf">cafes</p>
-          </li>
-          <li class="list_item">
-            <span class="list_number">23</span>
-            <p class="list_paragraf">food trucks</p>
-          </li>
-        </ul>
+      <div class="paragraf_conteiner">
+        <p class="paragraf_ice">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <button type="button" class="button_paragraf">
+          <picture>
+            <source
+              srcset="
+                ./images/products/arrow-right-1x.png 1x,
+                ./images/products/arrow-right-2x.png 2x
+              "
+              width="28"
+              height="28"
+              media="(min-width:1200px)"
+            />
+            <source
+              srcset="
+                ./images/products/arrow-right-1x.png 1x,
+                ./images/products/arrow-right-2x.png 2x
+              "
+              width="18"
+              height="18"
+              media="(min-width:768px)"
+            />
+            <img
+              src="./images/products/arrow-right-1x.png"
+              alt="detailed product description"
+            />
+          </picture>
+        </button>
       </div>
     </div>
-  </section>
-
+    <picture class="picture_girl animate__animated animate__backInRight">
+      <source
+        srcset="
+          ./images/hero_girl/girl1comp.png    1x,
+          ./images/hero_girl/girl1comp@2x.png 2x
+        "
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="
+          ./images/hero_girl/girl1tab.png   1x,
+          ./images/hero_girl/gir1tab@2x.png 2x
+        "
+        media="(min-width:768px)"
+      />
+      <img
+        src="./images/hero_girl/girl1tab.png "
+        alt="girl with ice cream   "
+      />
+    </picture>
+    <div class="list_conteiner">
+      <ul class="list animate__animated animate__backInRight">
+        <li class="list_item">
+          <span class="list_number">16</span>
+          <p class="list_paragraf">cafes</p>
+        </li>
+        <li class="list_item">
+          <span class="list_number">23</span>
+          <p class="list_paragraf">food trucks</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
