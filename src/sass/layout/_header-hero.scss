@@ -140,14 +140,49 @@
   top: 92px;
   left: 117px;
 
+  &::after {
+    content: ' ';
+    position: absolute;
+    z-index: -1;
+    top: -10px;
+    left: -65px;
+    background-color: #ffa5ba;
+    width: 346px;
+    height: 344px;
+    border-radius: 50%;
+  }
+
   @include tablet {
     top: 80px;
     left: 322px;
+
+    &::after {
+      content: ' ';
+      position: absolute;
+      z-index: -1;
+      top: -30px;
+      left: -65px;
+      background-color: #ffa5ba;
+      width: 335px;
+      height: 333px;
+      border-radius: 50%;
+    }
   }
 
   @include desktop {
     top: 118px;
     left: 630px;
+    &::after {
+      content: ' ';
+      position: absolute;
+      z-index: -1;
+      top: -60px;
+      left: -120px;
+      background-color: #ffa5ba;
+      width: 534px;
+      height: 534px;
+      border-radius: 50%;
+    }
   }
 }
 
@@ -207,7 +242,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 8px;
@@ -226,11 +261,11 @@
     font-size: 14px;
     line-height: 1.29;
   }
-&:hover,
-&:focus {
-  background-color: #e75480;
-  color: #fff;
-}
+  &:hover,
+  &:focus {
+    background-color: #e75480;
+    color: #fff;
+  }
 }
 
 .hero__about {
@@ -238,7 +273,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 8px;
