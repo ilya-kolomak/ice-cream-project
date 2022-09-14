@@ -54,7 +54,6 @@
   }
 
   &__marker {
-
     border-top: 1px solid $border-color-menu;
     height: 42px;
     display: flex;
@@ -145,4 +144,8 @@
 .header-right {
   display: flex;
   align-items: center;
+}
+
+body.lock {
+  overflow: hidden;
 }
