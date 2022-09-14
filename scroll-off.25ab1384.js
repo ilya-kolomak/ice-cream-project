@@ -1,0 +1,2 @@
+("undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:"undefined"!=typeof window?window:"undefined"!=typeof global?global:{}).parcelRequired7c6.register("9MJJ7",(function(e,o){const n=document.querySelector(".nav__button");console.log(n);const l=document.querySelector("body");console.log(l),n.addEventListener("click",(e=>{l.classList.toggle("lock")}))}));
+//# sourceMappingURL=scroll-off.25ab1384.js.map

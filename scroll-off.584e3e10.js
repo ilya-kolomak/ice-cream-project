@@ -1,0 +1,2 @@
+("undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:"undefined"!=typeof window?window:"undefined"!=typeof global?global:{}).parcelRequired7c6.register("fXx2b",(function(e,o){var n=document.querySelector(".nav__button");console.log(n);var l=document.querySelector("body");console.log(l),n.addEventListener("click",(function(e){l.classList.toggle("lock")}))}));
+//# sourceMappingURL=scroll-off.584e3e10.js.map
