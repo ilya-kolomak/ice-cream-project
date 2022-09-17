@@ -8,4 +8,3 @@ import('./javascript/modal-fran.js');
 import('./javascript/modal-about');
 
 import('./javascript/slider.js');
-import('./javascript/scroll-off.js');
